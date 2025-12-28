@@ -68,3 +68,9 @@ EC2 Elastic IP using nslookup libanisse.co.uk
 Once DNS was configured and NGINX was running, I successfully accessed my EC2 server through my domain and saw the default NGINX welcome page.
 
 <img src="images/website-live.png" width="600" alt="the site live">
+
+### What I learned
+
+How DNS works in the real world (domain, A record, public IP, server). The difference between public IP vs Elastic IP.
+How security groups control traffic (opening port 80 for HTTP). How to install, start, enable, and check the status of NGINX on Ubuntu. I also learned how to do a readme and add images to it.
+
