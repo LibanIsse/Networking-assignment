@@ -51,7 +51,7 @@ the same public IP address.
 
 <img src="images/elastic-ip.png" width="600" alt="Elastic IP associated with EC2 instance">
 
-### 6.Configure DNS
+### 6. Configure DNS
 
 I created an A record for my domain and pointed it to my EC2 Elastic IP address,
 so the domain resolves to my server.
@@ -61,7 +61,7 @@ so the domain resolves to my server.
 After creating the A record, I verified the domain resolves to my
 EC2 Elastic IP using nslookup libanisse.co.uk
 
-<img src="images/a-record.png" width="600" alt="images/ip-check.png">
+<img src="images/ip-check.png" width="600" alt="images/ip-check.png">
 
 ### 7. Load the NGINX default page
 
