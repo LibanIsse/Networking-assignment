@@ -27,7 +27,13 @@ Next, I launched an EC2 instance (Ubuntu) and created a new key pair so I could 
 
 <img src="images/connect-ec2.png" width="600" alt="EC2 instance running and SSH connection">
 
-### Commands used for NGINX
+### 3. Security group
+
+I updated my EC2 Security Group inbound rules to allow HTTP traffic on port 80, so the NGINX website can be accessed from the internet.
+
+<img src="images/security-group.png" width="600" alt="adding port 80">
+
+### 4. Commands used for NGINX
 - sudo apt update
 - sudo apt install -y nginx
 
@@ -38,9 +44,17 @@ Next, I launched an EC2 instance (Ubuntu) and created a new key pair so I could 
 
 <img src="images/nginx-status.png" width="450" alt="nginx update and status">
 
-### 3. Elastic IP
+### 5. Elastic IP
 
-I allocated and associated an Elastic IP with my EC2 instance so the server keeps the same public IP address.
+I allocated and associated an Elastic IP with my EC2 instance so the server keeps
+the same public IP address.
 
 <img src="images/elastic-ip.png" width="600" alt="Elastic IP associated with EC2 instance">
 
+
+### 6.Configure DNS
+
+I created an A record for my domain and pointed it to my EC2 Elastic IP address,
+so the domain resolves to my server.
+
+<img src="images/a-record.png" width="600" alt="A record">
