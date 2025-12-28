@@ -51,10 +51,20 @@ the same public IP address.
 
 <img src="images/elastic-ip.png" width="600" alt="Elastic IP associated with EC2 instance">
 
-
 ### 6.Configure DNS
 
 I created an A record for my domain and pointed it to my EC2 Elastic IP address,
 so the domain resolves to my server.
 
 <img src="images/a-record.png" width="600" alt="A record">
+
+After creating the A record, I verified the domain resolves to my
+EC2 Elastic IP using nslookup libanisse.co.uk
+
+<img src="images/a-record.png" width="600" alt="images/ip-check.png">
+
+### 7. Load the NGINX default page
+
+Once DNS was configured and NGINX was running, I successfully accessed my EC2 server through my domain and saw the default NGINX welcome page.
+
+<img src="images/website-live.png" width="600" alt="the site live">
