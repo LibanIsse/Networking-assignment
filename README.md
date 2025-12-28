@@ -40,7 +40,7 @@ I updated my EC2 Security Group inbound rules to allow HTTP traffic on port 80, 
 - sudo systemctl start nginx
 - sudo systemctl enable nginx
 
-- sudo systemctl status nginx --no-pager
+- sudo systemctl status nginx
 
 <img src="images/nginx-status.png" width="450" alt="nginx update and status">
 
